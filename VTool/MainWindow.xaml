@@ -1,0 +1,36 @@
+﻿<Window x:Class="VTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VTool"
+        mc:Ignorable="d"
+        Title="Tool cào ảnh voz tân" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="UserName" Width="50"/>
+                <TextBox Width="100" x:Name="tbUserName"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="Password" Width="50"/>
+                <TextBox Width="100" InputScope="Password" x:Name="tbPassword"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="Link" Width="50"/>
+                <TextBox Width="400" InputScope="Url" x:Name="tbLink" Text="https://next.voz.vn/threads/no-sex-test-dang-anh-nextvoz.613"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="From" Width="50"/>
+                <TextBox Width="50" InputScope="Number" x:Name="tbFrom" Text="1"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="to" Width="50"/>
+                <TextBox Width="50" InputScope="Number" x:Name="tbTo" Text="2"/>
+            </StackPanel>
+            <Button Content="Start" Width="100" Height="50" HorizontalAlignment="Center" Margin="0,10,0,0" Click="Button_Click" x:Name="btnStart"/>
+            <ProgressBar Width="300" Height="30" Margin="0,10,0,0" x:Name="prgProgress"/>
+            <TextBox x:Name="tbLog" Width="500" Height="100" Margin="0,10,0,0" VerticalScrollBarVisibility="Visible" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+</Window>
